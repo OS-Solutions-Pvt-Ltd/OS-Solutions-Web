@@ -1,10 +1,12 @@
-// Responsive Navbar Functionality
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburger = document.querySelector(".hamburger");
-    const navLinks = document.querySelector(".nav-links");
+let menu = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
 
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navLinks.classList.toggle("active");
-    });
-});
+menu.onclick = () => {
+    menu.classList.toggle("bx-x");
+    navbar.classList.toggle("active");
+};
+
+window.onscroll = () => {
+    menu.classList.remove("bx-x");
+    navbar.classList.remove("active");
+};
