@@ -5,6 +5,7 @@ ul {
     margin-inline-start: 0;
     margin-inline-end: 0;
     unicode-bidi: isolate;
+    list-style-type: none;!important;
     width: 90%;
 }
 
